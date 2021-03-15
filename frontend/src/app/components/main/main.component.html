@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="col s20" style="margin-top: 20%">
+        <form #numeroForm="ngForm" (ngSubmit)="intento(numeroForm)">
+            <div class="row" style="text-align: center">
+                <h4 style="color: white">INTRODUCE TU CODIGO</h4>
+            </div>
+            <div class="input-field" style="text-align: center;">
+                <input style="width: 10%" type="number" name='value' #value="ngModel" [(ngModel)]="service.selectedNumero.value" style="color: white; width: 10%">
+            </div>
+            <div class="input-field" style="margin-left: 41%; margin-bottom: 30%;">
+                <input class="btn black" type="submit">
+            </div>
+        </form>
+    </div>
+</div>
